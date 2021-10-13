@@ -331,8 +331,6 @@
 /* providers styles start */
 .providers{
      margin-top: 220px;
-     padding-right: 95px;
-     padding-left: 135px;
 }
 
 .providers_block{
@@ -363,7 +361,7 @@
        font-size: 18px;
        line-height: 30px;
        margin-top:59px;
-       padding-right: 105px;
+       padding-right: 5px;
   }
 
   .providers-button{
@@ -696,6 +694,62 @@
 }
 
 /* media start */
+@media screen and (max-width:960px){
+     .header_item{
+          margin-right: 20px;
+     }
+     .virtual_health_pic{
+          width: 493px;
+          height: 398px;
+     }
+     .intro_title{
+          font-size: 40px;
+          margin-bottom: 10px;
+     }
+     .intro_subtitle{
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 28px;
+          padding-right: 32px;
+       }
+     .intro_text{
+          padding-top: 55px;
+     }
+     .services{
+          margin-top: 142px;
+     }
+     .services_wrapper{
+          width: auto;
+     }
+     .services_subtitle{
+          font-size: 16px;
+     }
+     .services_cards{
+          grid-template-columns: repeat(2, 250px);
+     }
+     .services_card-thumb{
+          max-width: 82px;
+          height: 70px;
+     }
+     h3{
+          font-size: 20px;
+          line-height: 45px;
+     }
+     .services_card-desc{
+          font-size: 14px;
+          font-weight: 24px;
+
+     } 
+     .services_card{
+          height: 350px;
+     }
+     .leading_health_pic{
+          width: 450px;
+          height: 277px;
+     }
+
+}
 @media screen and (max-width:767px){
      .header_burger{
           display: block;
@@ -710,7 +764,7 @@
           z-index: 10;
           padding: 75px;
           transform: translateX(100%);
-          /*transition: .2s all linear;*/
+         /* transition: .2s all linear;*/
      }
      .header_nav_active{
           transform: translateX(0);
