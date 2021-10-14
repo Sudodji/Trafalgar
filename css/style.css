@@ -52,9 +52,15 @@
          url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/montserrat-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  html{
-      overflow-x: hidden; 
+  h4{
+     font-weight: bold;
+     font-size: 22px;
+     color:#fff;
   }
+     html{ 
+          overflow-x: hidden; 
+     }
+
   body{
        font-family:'Mulish';
        font-style: normal;
@@ -64,11 +70,7 @@
        color:#7D7987;
        margin: 0;
   }
-  h4{
-     font-weight: bold;
-     font-size: 22px;
-     color:#fff;
-  }
+  
   h3{
      font-weight: bold;
      font-size: 24px;
@@ -378,8 +380,6 @@
 
 /* mobile styles start */
 .mobile{
-     padding-left: 280px;
-     padding-right:164px;
      margin-top: 229px;
 }
 .mobile_block{
@@ -387,7 +387,7 @@
 }
 
 .mobile_title{
-     padding-right:150px;
+     padding-right:170px;
 }
 
 .mobile_title::after{
@@ -405,7 +405,7 @@
      font-weight: 300px;
      font-size: 18px;
      line-height: 30px;
-     padding-right:40px;
+     padding-right:150px;
 }
 
 .mobile-button{
@@ -694,7 +694,12 @@
 }
 
 /* media start */
+@media screen and (max-width:1152px){
+}
 @media screen and (max-width:960px){
+     body{
+          overflow-x: hidden;
+     }
      .header_item{
           margin-right: 20px;
      }
@@ -708,48 +713,144 @@
      }
      .intro_subtitle{
           font-weight: 300;
-          font-size: 18px;
-          line-height: 25px;
+          font-size: 22px;
+          line-height: 30px;
           margin-bottom: 28px;
           padding-right: 32px;
        }
      .intro_text{
-          padding-top: 55px;
+          padding-top: 15px;
      }
      .services{
-          margin-top: 142px;
+          margin-top: 132px;
      }
      .services_wrapper{
           width: auto;
+          padding: 0 15px;
+     }
+     .services_title::after{
+          top: 58px;
      }
      .services_subtitle{
-          font-size: 16px;
+          font-size: 20px;
      }
      .services_cards{
-          grid-template-columns: repeat(2, 250px);
+          grid-template-columns: repeat(2, 280px);
      }
      .services_card-thumb{
           max-width: 82px;
           height: 70px;
      }
      h3{
-          font-size: 20px;
+          font-size: 25px;
           line-height: 45px;
      }
      .services_card-desc{
-          font-size: 14px;
-          font-weight: 24px;
+          font-size: 19px;
+          font-weight: 
 
      } 
      .services_card{
           height: 350px;
      }
      .leading_health_pic{
-          width: 450px;
-          height: 277px;
+          width: 480px;
+          height: 300px;
+          padding-top: 100px;
      }
-
+     .providers_text{
+          margin-left: 102px; 
+     }
+     .providers{
+          margin-top: 150px;
+     }
+     h2{
+          font-size: 35px;
+          line-height: 46px;
+     }
+     .providers_title::after{
+          width: 46px;
+          height: 2px;
+          left:2px;
+          top: 160px;
+       }
+     .providers_subtitle{
+          font-size: 18px;
+          line-height: 25px;
+          padding-right: 0;
+     } 
+     .providers-button{
+          margin-top: 20px;
+     }
+     .mobile_health_pic{
+          width: 500px;
+          height: 274px;
+          padding-top: 50px;
+     }
+     .mobile_title{
+          padding-right:80px;
+     }
+     .mobile_title::after{
+          width: 46px;
+          top:120px;
+       }
+     .mobile_subtitle{
+          font-size: 18px;
+          line-height: 25px;
+          padding-right:55px;
+     }
+     .mobile-button{
+          margin-top: 20px;
+     }
+     .mobile{
+          margin-top: 190px;
+     }
+     .customer{
+          width: 720px;
+          height: 325px;
+          margin-top: 166px;
+     }
+     .customer_title{  
+          padding-top: 44px;
+     }
+     .customer_title::after{
+          width: 46px;
+          top:120px;
+       }
+       .customer_block{
+       display: flex;
+       padding-left: 118px;
+       padding-top: 16px;
+  }
+  .customer_health_pic{
+       display: none;
+  }
+  .customer_info{
+       margin-left: 19px;
+       width: 100%;
+       margin-right:50px;
+       padding-bottom: 50px;
+  }
+  .customer_info_title{
+      margin-bottom: 0px;  
+  }
+  .customer_info_subtitle{
+       font-size: 18px;
+       line-height: 8px;
+       color:#fff;
+       opacity: 85%;
+  }
+  .customer_words{
+       padding-right: 20px;
+       font-size: 19px;
+       line-height: 30px;
+       color:#fff;
+       opacity: 90%;
+       margin-top: 10px;
+  }
+  
 }
+
 @media screen and (max-width:767px){
      .header_burger{
           display: block;
