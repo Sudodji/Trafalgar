@@ -695,10 +695,111 @@
 
 /* media start */
 @media screen and (max-width:1152px){
+     .header_link{
+          font-size: 20px;
+     }
+     .services_subtitle{
+          font-size: 20px;
+     }
+     .services_cards{
+          grid-template-columns: repeat(2, 280px);
+     }
+     .services_card-thumb{
+          max-width: 82px;
+          height: 70px;
+     }
+     h3{
+          font-size: 25px;
+          line-height: 45px;
+     }
+     .services_card-desc{
+          font-size: 19px;
+     } 
+     .services_cards {
+          grid-template-columns: repeat(2, 400px);
+      }
+      .providers{
+           margin-top: 170px;
+      }
+      .providers_text{
+           margin-left: 82px;
+      }
+      .providers_subtitle{
+           font-size: 20px;
+      }
+      .leading_health_pic{
+           padding-top:80px;
+      }
+      .providers_title::after{
+           top: 190px;
+      }
+      .mobile_title{
+           padding-right: 0;
+      }
+      .mobile_subtitle{
+           padding-right: 80px;
+           font-size: 20px;
+      }
+      .customer{
+          width: 1000px;
+          height: 425px;
+          margin-top: 166px;
+     }
+     .customer_health_pic {
+          padding-top: 10px;
+          width: 60%;
+      }
+      .customer_info_subtitle{
+          font-size: 20px;
+          line-height: 38px;
+     }
+     
+     .check_title{
+          margin-top: 170px;
+     }
+     .check_card:last-child{
+          margin-top: 40px;
+     }
+     .check_card{
+          height: 572px;
+       }
+     h4{
+          font-size: 24px;
+     }
+     .check_card_subtitle{
+          font-size: 20px;
+          padding-right: 45px;
+     }
+     .check_card-more{
+          font-size: 20px;
+          background-position: 115px 11px;
+     }
+     .check_card-more:hover, check_card-more:focus{
+          background-position: 117px 11px;
+     }
+     .footer{
+          margin-top: 152px;
+          padding: 105px 60px 135px 80px;
+          height: 180px;
+     }
+     .footer_logo{
+          width: 100%;
+     }
+     .footer_subtitle{
+          padding-right: 0;
+     }
+     .footer_info{
+          padding-top:24px;
+     }
+     
+     
 }
 @media screen and (max-width:960px){
      body{
           overflow-x: hidden;
+     }
+     .header_link{
+          font-size: 20px;
      }
      .header_item{
           margin-right: 20px;
@@ -747,8 +848,6 @@
      }
      .services_card-desc{
           font-size: 19px;
-          font-weight: 
-
      } 
      .services_card{
           height: 350px;
@@ -806,7 +905,7 @@
           margin-top: 190px;
      }
      .customer{
-          width: 720px;
+          width: 750px;
           height: 325px;
           margin-top: 166px;
      }
@@ -819,14 +918,14 @@
        }
        .customer_block{
        display: flex;
-       padding-left: 118px;
+       padding-left: 0;
        padding-top: 16px;
   }
   .customer_health_pic{
        display: none;
   }
   .customer_info{
-       margin-left: 19px;
+       margin-left: 20px;
        width: 100%;
        margin-right:50px;
        padding-bottom: 50px;
@@ -837,8 +936,6 @@
   .customer_info_subtitle{
        font-size: 18px;
        line-height: 8px;
-       color:#fff;
-       opacity: 85%;
   }
   .customer_words{
        padding-right: 20px;
@@ -848,6 +945,42 @@
        opacity: 90%;
        margin-top: 10px;
   }
+  .check_title{
+     margin-top: 170px;
+}
+.check_card:last-child{
+     margin-top: 40px;
+}
+.check_card{
+     height: 542px;
+  }
+h4{
+     font-size: 24px;
+}
+.check_card_subtitle{
+     font-size: 18px;
+     padding-right: 45px;
+}
+.check_card-more{
+     font-size: 18px;
+     background-position: 105px 11px;
+}
+.check_card-more:hover, check_card-more:focus{
+     background-position: 107px 11px;
+}
+.footer{
+     margin-top: 152px;
+     padding: 105px 60px 135px 80px;
+}
+.footer_logo{
+     width: 100%;
+}
+.footer_subtitle{
+     padding-right: 0;
+}
+.footer_info{
+     padding-top:24px;
+}
   
 }
 
