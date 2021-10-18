@@ -193,7 +193,7 @@
   }
   .burger_line_first{
        top: 0;
-       height: 3px;
+       height: 1.5px;
   }
   .burger_line_second{
      top: 50%;
@@ -798,6 +798,9 @@
      body{
           overflow-x: hidden;
      }
+     .header_wrapper{
+          padding-top: 26px;
+     }
      .header_link{
           font-size: 20px;
      }
@@ -997,8 +1000,8 @@ h4{
           background-color:#5B9BF3;
           z-index: 10;
           padding: 75px;
+          padding-left: 35px;
           transform: translateX(100%);
-         /* transition: .2s all linear;*/
      }
      .header_nav_active{
           transform: translateX(0);
@@ -1025,7 +1028,7 @@ h4{
           height: 40px;
           position: relative;
           bottom:395px;
-          left: 580px;
+          left: 220px;
           z-index: 11;
      }
      .header_nav-close-line{
@@ -1034,8 +1037,7 @@ h4{
           height: 2px;
           background:#fff;
           position: absolute;
-          top: 50%;
-          
+          top: 50%;  
      }
      .header_nav-close-line:first-child{
           transform: translateY(-50%) rotate(45deg);
@@ -1043,7 +1045,142 @@ h4{
      .header_nav-close-line:last-child{
           transform: translateY(-50%) rotate(-45deg);
      }
-     
+     .virtual_health_pic{
+          display: none;
+     }
+     .intro{
+          margin-top: 24px;
+     }
+     .intro_subtitle{
+          padding: 0;
+     }
+     .services{
+          margin-top: 100px;
+     }
+     .services_cards{
+          grid-template-columns: repeat(1, 280px);
+     }
+     .services_card{
+          height: 340px;
+     }
+     .providers{
+          margin-top:80px;
+     }
+     .providers_title::after{
+          top:120px;
+     }
+     .leading_health_pic{
+          display: none;
+     }
+     .providers_text{
+          margin-left: 0;
+     }
+     .mobile{
+          margin-top: 110px;
+     }
+     .mobile_health_pic{
+          display: none;
+     }
+     .mobile_title{
+          padding-right: 0;
+     }
+     .mobile_subtitle{
+          padding-right: 0;
+     }
+     .customer{
+          width:290px;
+          height: 280px;
+          margin-top: 136px;
+     }
+     .customer_title{
+          font-size: 18px;
+          padding-top:24px;
+          padding-right: 0;
+          margin: 0;
+     }
+     .customer_info{
+          margin-right: 0;
+          padding-bottom: 0;
+          margin-left: 0;
+     }
+     .customer_info_title{
+          font-size: 17px;
+     }
+     .customer_info_subtitle{
+          font-size: 14px;
+          line-height: 18px;
+          margin: 5px 0;
+     }
+     .customer_words {
+          padding-right: 0;
+          font-size: 13px;
+          line-height: 20px;
+          padding: 0 10px;
+          margin: 0;
+          margin-top: 10px;
+     }
+     .customer_block{
+          flex-direction: column;
+          text-align: center;
+          padding-top: 0;
+     }
+     .customer_title::after{
+          width: 36px;
+          top:70px;
+       }
+       .owl-carousel .owl-nav button.owl-next{
+          margin-left: 150px;
+     }
+     .owl-carousel .owl-nav button.owl-next, .owl-prev{
+          margin-top: 23px;
+     }
+     .check_title{
+          margin-top: 130px;
+     }
+     .check_title::after{
+          top:106px;
+       }
+       .check_cards {
+          grid-template-columns: repeat(auto-fit, 280px);
+          grid-row-gap: 40px;
+          padding-top: 42px;
+       }
+       .check_card-thumb{
+            width: 280px;
+       }
+       .check_card:last-child {
+          margin-top: 0;
+      }
+      .footer {
+          margin-top: 122px;
+          padding: 35px 30px 405px 30px;
+          height: 380px;
+      }
+      .footer_item{
+           flex-direction: column;
+      }
+      .footer_nav{
+           flex-wrap: wrap;
+      }
+      .footer_menu{
+           padding-left: 0;
+      }
+      
 }
+@media screen and (max-width:321px){
+     .providers_title::after{
+         top: 160px;
+     }
+     .footer{
+          height: 410px;
+     }
+}
+
+@media screen and (max-width:415px){
+.footer {
+     padding: 35px 70px 405px 30px;
+ }
+}
+ 
 /* media end */
 
